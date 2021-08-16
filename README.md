@@ -1,1 +1,1 @@
-# Veri-Bilimi-Patikas-Projeler
+# Veri-Bilimi-Patikasi-Projeler

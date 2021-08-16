@@ -1,6 +1,6 @@
 # Veri-Bilimi-Patikasi-Projeler
 
-# ÖDEV 1
+# SQL ÖDEV 1
 ### 1. Film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
 SELECT title, description FROM film
 
@@ -21,7 +21,7 @@ SELECT * FROM film
 WHERE NOT (rental_rate =2.99 OR rental_rate=4.99 ) AND lenght <50
 
 
-# ÖDEV 2
+# SQL ÖDEV 2
 ### 1. Film tablosunda bulunan tüm sütunlardaki verileri replacement_cost değeri 12.99 dan büyük eşit ve 16.99 küçük olma koşuluyla sıralayınız ( BETWEEN - AND yapısını kullanınız.)
 SELECT * FROM film
 WHERE replacement_cost BETWEEN 12.99 AND 16.99
@@ -35,7 +35,7 @@ SELECT * FROM Musteriler
 WHERE rental_rate IN(0.99, 2.99, 4.99) AND replacement_cost IN(12.99, 15.99, 28.99)
 
 
-# ÖDEV 4
+# SQL ÖDEV 4
 ### 1. Film tablosunda bulunan replacement_cost sütununda bulunan birbirinden farklı değerleri sıralayınız.
 SELECT DISTINCT replacement_cost FROM film;
 
@@ -55,7 +55,7 @@ SELECT COUNT(*) FROM city
 WHERE Sehir LİKE '%r' OR Sehir LİKE '%R'
 
 
-# ÖDEV 5
+# SQL ÖDEV 5
 ### 1. Film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız.
 SELECT * FROM film
 WHERE title LIKE '%n'
@@ -75,8 +75,7 @@ ORDER BY last_name DESC
 LIMIT 4;
 
 
-# ÖDEV 6
-
+# SQL ÖDEV 6
 ### 1. Film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?
 SELECT AVG(rental_rate) FROM film
 
